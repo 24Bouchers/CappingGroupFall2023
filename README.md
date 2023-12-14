@@ -73,6 +73,9 @@ When implemented, this will show basic information about the currently signed-in
 
 The only currently known bug is if the user searches for a device or log that does not exist, the user will have to refresh the page to clear the search.
 
+Note: for the graphs, be careful what time zone the server/vm is compared to the localhost when testing.
+App.py's date.today() pulls from the machine it is running on and thus can appear a day behind if in EST, as the data is in UTC.
+
 ## Front-end Framework
 
 The site uses the Bootstrap framework for its front-end design. Bootstrap is a popular open-source toolkit for developing with HTML, CSS, and JS. It provides ready-made components and responsive design features that make web development more accessible and efficient.
